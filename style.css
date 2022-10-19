@@ -1,0 +1,101 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+::selection {
+  color: var(--dark-blue);
+  background-color: var(--neon-green);
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--light-cyan);
+  display: flex;
+}
+
+.card {
+  background-color: var(--dark-grayish-blue);
+  height: 21rem;
+  width: 32rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  box-shadow: 2px 2px 4px 0 #111;
+}
+
+.advice-information {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advice-title {
+  color: var(--neon-green);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 0.675rem;
+  font-weight: 800;
+  padding: 2.5rem 0 0 0;
+}
+
+.advice {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0 4rem;
+}
+
+.divider {
+  padding-bottom: 4rem;
+}
+
+.roll-advice {
+  position: absolute;
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  padding: 1.25rem;
+  top: 90%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.roll-advice > img {
+  height: 22px;
+  width: 22px;
+}
+
+.roll-advice:hover {
+  box-shadow: 0 0 20px 4px var(--neon-green);
+  outline: 0;
+}
+
+.roll-advice:active {
+  box-shadow: 0 0 20px 4px var(--neon-green);
+  -webkit-transform: rotate(180deg) scale(0.9);
+  -ms-transform: rotate(180deg) scale(0.9);
+  transform: rotate(180deg) scale(0.9);
+}
+
+@media (max-width: 512px) {
+  .card {
+    height: 21rem;
+    width: 21rem;
+  }
+
+  .advice {
+    padding: 0 1rem;
+  }
+}

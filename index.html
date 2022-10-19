@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Advice Generator</title>
+  </head>
+  <body>
+    <!-- Challenge by Frontend Mentor. Coded by John Victor (@johnv2309 on Github) -->
+    <main class="card">
+      <article class="advice-information">
+        <h1 class="advice-title">Advice <span class="advice-id"></span></h1>
+        <p class="advice">
+          "It is easy to sit up and take notice, what's difficult is getting up
+          and taking action."
+        </p>
+        <picture class="divider" aria-hidden="true">
+          <source
+            media="(max-width: 512px)"
+            srcset="images/pattern-divider-mobile.svg"
+          />
+          <img src="images/pattern-divider-desktop.svg" />
+        </picture>
+        <button class="roll-advice">
+          <img src="images/icon-dice.svg" alt="A rolling dice" />
+        </button>
+      </article>
+    </main>
+  </body>
+</html>
