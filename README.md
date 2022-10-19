@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Repository: [Github](https://github.com/johnv2309/advice-generator-component)
-- Solution: [Frontend Mentor](https://your-solution-url.com)
+- Solution: [Frontend Mentor](https://www.frontendmentor.io/solutions/advice-generator-with-mobilefirst-worklow-and-flexbox-t62L0p7u-Y)
 - Live Site: [Netlify](https://johnv2309-advice-generator-component.netlify.app/)
 
 ## My process
